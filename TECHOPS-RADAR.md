@@ -1,15 +1,16 @@
 # GDS TechOps Radar
 
-examples
+https://radar.cloudapps.digital
 
-- [gds-radar.csv](https://gist.github.com/pauldougan/4514cda8655be3ad26d5b8cf511920cf/) [raw](https://gist.githubusercontent.com/pauldougan/4514cda8655be3ad26d5b8cf511920cf/raw/bdd0d7cd6ac554ba19a64efbd67b12c11986c2cd/gds-radar.csv)
-- https://radar.cloudapps.digital
-- https://radar.cloudapps.digital/?sheetId=https://gist.githubusercontent.com/pauldougan/4514cda8655be3ad26d5b8cf511920cf/raw/bdd0d7cd6ac554ba19a64efbd67b12c11986c2cd/gds-radar.csv
+| data | radar | description |
+|------|-------|-------------|
+| [gds-radar.csv](https://gist.githubusercontent.com/pauldougan/4514cda8655be3ad26d5b8cf511920cf/raw/bdd0d7cd6ac554ba19a64efbd67b12c11986c2cd/gds-radar.csv) | radar | an example based on a sample to show how the radar works |
 
-The application is hosted on [GOV.UK PaaS](https://cloud.service.gov.uk) usin the CLoud Foundry Docker support
+
+The application is hosted on [GOV.UK PaaS](https://cloud.london.service.gov.uk) using the Cloud Foundry Docker support.
 
 ```
-cf login blah
-cf t -o -s
-cf push radar -o blan 
+cf login --sso 
+cf t -o gds-techarchs -s sandbox 
+cf push radar
 ```
